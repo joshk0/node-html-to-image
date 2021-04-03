@@ -10,6 +10,7 @@ declare function nodeHtmlToImage(options: NodeHtmlToImageConstructorOptions): No
 
 export interface NodeHtmlToImageInstance {
   render(options: NodeHtmlToImageOptions): Promise<string | Buffer | (string | Buffer)[]>;
+  async shutdown(): Promise<void>;
 }
 
 export default nodeHtmlToImage;
